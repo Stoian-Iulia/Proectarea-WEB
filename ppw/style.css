@@ -1,0 +1,193 @@
+body {
+    font-family: "sans-serif" Verdana;
+    margin: 0;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+header{
+    background-image: url("foto/kioto.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 150px;
+}
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login{
+    position: relative;
+    cursor: pointer;
+}
+.login img{
+    position: absolute;
+    bottom: -15px;
+    left: -50%;
+    display: block;
+    transition: 10s linear;
+
+}
+.login:hover img{
+    /*animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: fish_rotate;
+    animation-timing-function: linear;*/
+    transform: rotate(-720deg);
+}
+@keyframes fish_rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+.btn{
+    display: block;
+    width: 65px;
+    height: 65px;
+    border-radius: 65px;
+    background-color: white;
+    text-align: center;
+    line-height: 65px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.dws-ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.dws-li{
+    list-style: none;
+    padding: 10px;
+}
+
+.dws-li a{
+    text-decoration: none;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding: 5px;
+}
+.dws-li a i{
+    margin-right: 10px;
+}
+
+.dws-li a::before{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: #33bdf1;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+
+.dws-li a::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: #ff2117;
+    position: absolute;
+    top: 90%;
+    right: 0;
+    transition: .5s;
+    mix-blend-mode: multiply;
+}
+
+
+.dws-li:hover{
+    background-color: #e5eae850;
+}
+.dws-li:hover a::before{
+    width: 50%;
+    transform: translateX(100%);
+}
+.dws-li:hover a::after{
+    width: 50%;
+    transform: translateX(-100%);
+}
+.dws-li a:hover{
+    color: #e62117;
+}
+
+.promo { 
+}
+ 
+.form {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,.7);
+}
+.form h1 {
+    margin: 30px 100px;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.input-form input {
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    background: none;
+    outline: none;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+.input-form input[type="text"]:focus, .input-form input[type="password"]:focus {
+    border: 1px solid #0fc3f5;
+}
+.input-form input[type="submit"] {
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    background: #0fc3f5;
+    transition: .3s;
+}
+.input-form input[type="submit"]:hover {
+    background: #4442db;
+}
+.form a {
+    display: block;
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+.form a:hover {
+    color: #0fc3f5;
+}
+
+.promo-title {
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 70px;
+    color: rgb(252, 249, 249);
+    margin-top: 60px;
+}
+
+.second-title {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+    color: #e5e5e5ab
+}
